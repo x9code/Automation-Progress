@@ -8,12 +8,12 @@ public class LinkText {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		driver.get("file:///D:/coding/Html-css-javascript/htmlclass/Link.html");
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		driver.manage().window().maximize();
-		Thread.sleep(1000);
-		driver.findElement(By.partialLinkText("ok")).click();
+		Thread.sleep(4000);
+		driver.findElement(By.linkText("FaceBook")).click();
 		Thread.sleep(4000);
 		driver.close();
 
