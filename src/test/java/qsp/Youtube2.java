@@ -7,7 +7,7 @@ public class Youtube2 {
 		ChromeDriver driver = new ChromeDriver();
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
-		driver.get("https:/www.youtube.com");
+		driver.get("https:/www.youtube.com/");
 		Thread.sleep(3000);
 		String source = driver.getPageSource();
 		System.out.println(source);
