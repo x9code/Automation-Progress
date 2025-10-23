@@ -23,6 +23,8 @@ public class FaceBookLink {
 		driver.findElement(By.id("password_step_input")).sendKeys("Deepak@1234");
 		Thread.sleep(2000);
 		driver.findElement(By.name("websubmit")).click();
+		Thread.sleep(3000);
+		driver.close();
 
 	}
 
