@@ -26,7 +26,7 @@ public static void main(String[] args) throws InterruptedException {
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("//img[@src='https://th.wallhaven.cc/lg/je/jexkwm.jpg']")).click();
 	Thread.sleep(1000);
-	driver.findElement(By.id("username")).sendKeys("Gone65478");
+	driver.findElement(By.xpath("//a[@class='username usergroup-2']")).click();
 	Thread.sleep(6000);
 	driver.close();
 }
