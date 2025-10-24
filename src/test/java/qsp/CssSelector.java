@@ -12,7 +12,7 @@ public class CssSelector {
 		Thread.sleep(2000);
 		driver.get("https://www.flipkart.com/");
 		Thread.sleep(2000);
-		driver.findElement(By.name("q")).sendKeys("Iphone 17");
+		driver.findElement(By.name("q")).sendKeys("IPhone 17");
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("button[type ='submit']")).click();
 		Thread.sleep(5000);
