@@ -32,9 +32,9 @@ public class day1 {
 			text = quote.findElement(By.xpath("//span[@class='text']")).getText();
 			author = quote.findElement(By.xpath("//small[@class='author']")).getText();
 		}
-		System.out.println(text+" - "+author);
+		System.out.println(text + " - "+author);
 		if (author.equals("Albert Einstein")) {
-            System.out.println(text);
+            System.out.println(text+" - "+author);
         }
 		Thread.sleep(5000);
 		driver.quit();
