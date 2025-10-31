@@ -17,7 +17,6 @@ public class Xpath2 {
 		driver.findElement(By.id("video-title")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@data-tooltip-title='Full screen (f)']")).click();
-		Thread.sleep(20000);
 		Thread.sleep(3000);
 		driver.quit();
 	}
