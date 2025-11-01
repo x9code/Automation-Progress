@@ -15,8 +15,7 @@ public class DynamicLoop {
 		driver.findElement(By.xpath("//section[text()='Web Table']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Dynamic Web Table")).click();
-		//Thread.sleep(3000);
-		for(int i=1;i<=100;i++) {
+		for(int i=1;i<=10;i++) {
 			Thread.sleep(5000);
 			WebElement priceElement = driver.findElement(By.xpath("//th[text()='Samsung Galaxy']/../td[4]"));
 			String price = priceElement.getText();
