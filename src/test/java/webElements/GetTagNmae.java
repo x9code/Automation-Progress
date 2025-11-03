@@ -9,7 +9,7 @@ public class GetTagNmae {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
-		String tag = driver.findElement(By.xpath("//img[@alt='Facebook']")).getTagName();
+		String tag = driver.findElement(By.id("email")).getTagName();
 		System.out.println(tag);
 		Thread.sleep(3000);
 		driver.quit();
