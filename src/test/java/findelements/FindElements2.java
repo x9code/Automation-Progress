@@ -17,7 +17,8 @@ public class FindElements2 {
 		List<WebElement> sugg = driver.findElements(By.xpath("//li[@class='_3D0G9a']"));
 		int a=1;
 		for(WebElement s : sugg) {
-			System.out.println(a +"-"+s.getText());
+			System.out.println(a +":)"+s.getText());
+			System.out.println();
 			Thread.sleep(10);
 			a++;
 		}
