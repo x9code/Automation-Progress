@@ -1,5 +1,4 @@
 package findelements;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -7,21 +6,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FindElements2 {
+public class FindElements3 {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.flipkart.com/");
-		driver.findElement(By.name("q")).sendKeys("Books");
+		driver.get("https://www.amazon.in/");
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone 17");
 		Thread.sleep(2000);
-		List<WebElement> sugg = driver.findElements(By.xpath("//li[@class='_3D0G9a']"));
+		List<WebElement> suggestion = driver.findElements(By.xpath("//div[@role='row']"));
 		int a=1;
-		for(WebElement s : sugg) {
-			System.out.println(a +" : "+s.getText());
-			System.out.println();
-			Thread.sleep(10);
+		for(WebElement d : suggestion) {
+			System.out.println(a+" : "+d.getText());
+			Thread.sleep(20);
 			a++;
 		}
 		driver.quit();
-	}
+}
 }
