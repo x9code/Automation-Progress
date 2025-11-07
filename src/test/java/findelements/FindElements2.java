@@ -12,12 +12,14 @@ public class FindElements2 {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
-		driver.findElement(By.name("q")).sendKeys("iphone 17");
+		driver.findElement(By.name("q")).sendKeys("Books");
 		Thread.sleep(2000);
 		List<WebElement> sugg = driver.findElements(By.xpath("//li[@class='_3D0G9a']"));
+		int a=1;
 		for(WebElement s : sugg) {
-			System.out.println(s.getText());
-			Thread.sleep(1000);
+			System.out.println(a +"-"+s.getText());
+			Thread.sleep(10);
+			a++;
 		}
 		driver.quit();
 	}
