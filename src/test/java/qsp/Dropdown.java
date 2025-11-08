@@ -29,7 +29,7 @@ public class Dropdown {
 		select1.selectByVisibleText("13");
 		Thread.sleep(1000);
 		//birth month
-		WebElement drop2 = driver.findElement(By.name("birthday_month"));
+		WebElement drop2 = driver.findElement(By.id("month"));
 		Select select2 = new Select(drop2);
 		select2.selectByVisibleText("Dec");
 		Thread.sleep(1000);
