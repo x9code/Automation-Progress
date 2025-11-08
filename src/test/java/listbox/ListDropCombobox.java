@@ -26,7 +26,7 @@ public class ListDropCombobox {
 		Thread.sleep(2000);
 		WebElement year = driver.findElement(By.id("year"));
 		Select s3 = new Select(year);
-		s3.selectByIndex(i);
+		s3.selectByVisibleText("2002");
 		Thread.sleep(5000);
 		driver.quit();
 	}
