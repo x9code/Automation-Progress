@@ -28,7 +28,7 @@ public class ListDropCombobox {
 		Select s3 = new Select(year);
 		for(int i = 0;i<=50;i++) {
 		s3.selectByIndex(i);
-		Thread.sleep(20);
+		Thread.sleep(2);
 		
 		}
 		Thread.sleep(5000);
