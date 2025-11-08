@@ -12,10 +12,10 @@ public class ListDropCombobox {
 		Thread.sleep(4000);
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		//click on create new account
 		driver.findElement(By.linkText("Create new account")).click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		WebElement day = driver.findElement(By.id("day"));
 		Select s1 = new Select(day);
 		s1.selectByIndex(12);
@@ -26,7 +26,11 @@ public class ListDropCombobox {
 		Thread.sleep(2000);
 		WebElement year = driver.findElement(By.id("year"));
 		Select s3 = new Select(year);
-		s3.selectByVisibleText("2002");
+		for(int i = 0;i<=50;i++) {
+		s3.selectByIndex(i);
+		Thread.sleep(20);
+		
+		}
 		Thread.sleep(5000);
 		driver.quit();
 	}
