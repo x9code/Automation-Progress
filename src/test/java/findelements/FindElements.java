@@ -16,8 +16,8 @@ public class FindElements {
 		int count = allLinks.size();
 		System.out.println(count);
 		for(int i = 0;i<count;i++) {
-			System.out.println(allLinks.get(i).getText());
-			Thread.sleep(50);
+			System.out.println(i+"-"+allLinks.get(i).getText());
+			Thread.sleep(20);
 		}
 		driver.quit();
 		
