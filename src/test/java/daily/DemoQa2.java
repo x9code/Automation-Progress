@@ -14,7 +14,7 @@ public class DemoQa2 {
 		@Nullable
 		String placeholder = driver.findElement(By.id("userName")).getAttribute("placeholder");
 			if (placeholder.equals("Full Name")) {
-				System.out.println("matching with :"+placeholder);
+				System.out.println("matching with attribute value : "+placeholder);
 			} else {
 				System.out.println("not matching");
 			}	
@@ -22,7 +22,7 @@ public class DemoQa2 {
 			@Nullable
 			String classAttribute = driver.findElement(By.id("userName")).getAttribute("class");
 			if (classAttribute.equals(" mr-sm-2 form-control")) {
-				System.out.println("matching with :"+classAttribute);
+				System.out.println("matching with attribute value : "+classAttribute);
 			} else {
 				System.out.println("not matching");
 			}
