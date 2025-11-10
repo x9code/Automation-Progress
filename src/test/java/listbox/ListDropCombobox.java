@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 public class ListDropCombobox {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
-		Thread.sleep(4000);
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		Thread.sleep(2000);
@@ -22,7 +21,7 @@ public class ListDropCombobox {
 		Thread.sleep(2000);
 		WebElement month = driver.findElement(By.id("month"));
 		Select s2 = new Select(month);
-		s2.selectByIndex(11);
+		s2.selectByValue("12");
 		Thread.sleep(2000);
 		WebElement year = driver.findElement(By.id("year"));
 		Select s3 = new Select(year);
