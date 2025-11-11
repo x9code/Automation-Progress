@@ -24,16 +24,9 @@ public class GetFIrstSelectedOption {
 		s1.selectByIndex(0);
 		Thread.sleep(500);
 		s1.selectByVisibleText("Solid Gold Petite Mi...");
-		
 		String opt = s1.getFirstSelectedOption().getText();
 		System.out.println(opt);
 		Thread.sleep(2000);
-		List<WebElement> opts = s1.getAllSelectedOptions();
-		for(WebElement s : opts) {
-			System.out.println(s.getText());
-			Thread.sleep(2000);
-		}
-		 
 		driver.quit();
 	}
 }
