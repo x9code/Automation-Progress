@@ -11,7 +11,7 @@ public class IsDisplayed {
 		driver.get("https://the-internet.herokuapp.com/dynamic_controls");
 		Thread.sleep(2000);
 		boolean disp = driver.findElement(By.id("checkbox")).isDisplayed();
-		System.out.println("checkBox is displayed :"+disp);
+		System.out.println("checkBox is displayed : "+disp);
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		Thread.sleep(2000);
