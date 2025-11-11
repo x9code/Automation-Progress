@@ -1,5 +1,7 @@
 package listbox;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +27,13 @@ public class GetFIrstSelectedOption {
 		
 		String opt = s1.getFirstSelectedOption().getText();
 		System.out.println(opt);
+		Thread.sleep(2000);
+		List<WebElement> opts = s1.getAllSelectedOptions();
+		for(WebElement s : opts) {
+			System.out.println(s.getText());
+			Thread.sleep(2000);
+		}
+		 
 		driver.quit();
 	}
 }
