@@ -1,5 +1,6 @@
 package listbox;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -18,6 +19,12 @@ public class GetAllOptions {
 		Select s1 = new Select(multiSelect);
 		List<WebElement> allopts = s1.getOptions();
 		System.out.println("No. of options :"+allopts.size());
+		System.out.println();
+		Iterator<WebElement> opts = allopts.iterator();
+		while (opts.hasNext()) {                 
+            WebElement element = opts.next();        
+            System.out.println(element.getText());
+		}
 		int a=1;
 		for (WebElement webElement : allopts) {
 			System.out.println(a+" - "+webElement.getText());
