@@ -20,6 +20,9 @@ public class GetAllOptions {
 		List<WebElement> allopts = s1.getOptions();
 		System.out.println("No. of options :"+allopts.size());
 		System.out.println();
+		String options = s1.getWrappedElement().getText();
+		System.out.println(options);
+		System.out.println();
 		Iterator<WebElement> opts = allopts.iterator();
 		while (opts.hasNext()) {                 
             WebElement element = opts.next();        
