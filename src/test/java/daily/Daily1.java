@@ -29,7 +29,7 @@ public class Daily1 {
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("iframe[title='recaptcha']")));
         WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(
             By.xpath("//div[@class='recaptcha-checkbox-border']")));
-        checkbox.click();
+        checkbox.click();z
         driver.switchTo().defaultContent();
 
         driver.quit();
