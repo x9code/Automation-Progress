@@ -13,7 +13,7 @@ public class Alert1 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://demoapps.qspiders.com/ui/alert?sublist=0");
-		driver.findElement(By.xpath("(//input[@type='checkbox'])[3]")).click();
+		driver.findElement(By.xpath("//td[text()='APPLEIPhone']/preceding-sibling::td/child::input")).click();
 		driver.findElement(By.id("deleteButton")).click();
 		Alert a = driver.switchTo().alert();
 		System.out.println(a.getText());
