@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Alert1 {
+public class AlertPopUp2 {
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -17,8 +17,8 @@ public class Alert1 {
 		driver.findElement(By.id("deleteButton")).click();
 		Alert a = driver.switchTo().alert();
 		System.out.println(a.getText());
-		a.accept();
-		System.out.println("Deleted.....");
+		a.dismiss();
+		System.out.println("Dismissed.....");
 		driver.quit();
 	}
 }
