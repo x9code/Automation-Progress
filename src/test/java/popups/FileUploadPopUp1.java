@@ -17,8 +17,8 @@ public class FileUploadPopUp1 {
 		
 		String path = f.getAbsolutePath();
 		driver.findElement(By.id("resume")).sendKeys( path );
-         Thread.sleep(3000);
-         driver.quit();
+        Thread.sleep(3000);
+        driver.quit();
 	}
 
 }
