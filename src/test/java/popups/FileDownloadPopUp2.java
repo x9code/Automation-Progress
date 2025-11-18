@@ -3,10 +3,12 @@ package popups;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.Iterator;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FileDownloadPopUp1 {
+public class FileDownloadPopUp2 {
 	public static void main(String[] args) throws AWTException, InterruptedException {
 		WebDriver driver = new  ChromeDriver();
 		driver.manage().window().maximize();
@@ -15,9 +17,12 @@ public class FileDownloadPopUp1 {
 		r.keyPress(KeyEvent.VK_CONTROL);
 		r.keyPress(KeyEvent.VK_S);
 		r.keyRelease(KeyEvent.VK_CONTROL);
-		Thread.sleep(3000);
+		for(int i =1;i<=4;i++) {
+			r.keyPress(KeyEvent.VK_TAB);
+		}
+		r.keyRelease(KeyEvent.VK_TAB);
 		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		driver.quit();
 	}
 }
