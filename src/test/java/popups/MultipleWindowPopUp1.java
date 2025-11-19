@@ -14,7 +14,7 @@ public class MultipleWindowPopUp1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://demoapps.qspiders.com/ui/browser?sublist=0");
 		String winid = driver.getWindowHandle();
-		System.out.println("parent window id : "+winid);
+		System.out.println("PARENT WINDOW ID : "+winid);
 		driver.findElement(By.linkText("Multiple Windows")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text()='Shop Now']")).click();
