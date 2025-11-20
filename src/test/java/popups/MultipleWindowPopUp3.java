@@ -26,10 +26,7 @@ public class MultipleWindowPopUp3 {
 			if(!win.equals(winid)) {
 				driver.switchTo().window(win);
 			    System.out.println(a +" - "+win);
-			    driver.close();
-			    a++;
-			    Thread.sleep(200);
-			}
+			    }
 		}
 		driver.switchTo().window(winid);
 		driver.quit();
