@@ -11,7 +11,7 @@ public class HandlingKeyBoardKeys {
 		//Runtime.getRuntime().exec("Notepad");
 		new ProcessBuilder("notepad.exe").start();
 		Thread.sleep(3000);
-		Robot r=new Robot();
+		Robot r = new Robot();
 		r.keyPress(KeyEvent.VK_SHIFT);
 		r.keyPress(KeyEvent.VK_Q);
 		r.keyPress(KeyEvent.VK_SHIFT);
