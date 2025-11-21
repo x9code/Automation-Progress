@@ -19,13 +19,14 @@ public class NestedFrames1 {
 		driver.switchTo().frame(0);
 		String email = driver.findElement(By.xpath("(//p[.='Default Email']/following-sibling::p[@class='para'])[1]")).getText();
 		System.out.println("Email :"+email);
-		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.switchTo().frame(0);
 		driver.findElement(By.id("email")).sendKeys(email);
+		Thread.sleep(1000);
 		driver.switchTo().parentFrame();
 		String pass = driver.findElement(By.xpath("(//p[.='Default Password']/following-sibling::p[@class='para'])[1]")).getText();
 		System.out.println("Password :"+pass);
+		Thread.sleep(1000);
 		driver.switchTo().frame(0);
 		driver.findElement(By.id("password")).sendKeys(pass);
 		driver.findElement(By.id("confirm-password")).sendKeys(pass);
