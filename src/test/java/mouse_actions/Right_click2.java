@@ -6,7 +6,6 @@ import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,6 +31,8 @@ public class Right_click2 {
 		String c1 = itr.next();
 		driver.switchTo().window(c1);
 		Thread.sleep(3000);
+		driver.switchTo().window(p1);
+		Thread.sleep(4000);
 		driver.quit();
 	}
 }
