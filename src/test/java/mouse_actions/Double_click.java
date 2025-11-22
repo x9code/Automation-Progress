@@ -18,7 +18,7 @@ public class Double_click {
 		Actions q = new Actions(driver);
 		q.doubleClick(but).perform();
 		Thread.sleep(2000);
-		String txt = driver.findElement(By.xpath("//span[@class='text-green-600 p-1 px-2 ms-2 rounded-md']")).getText();
+		String txt = driver.findElement(By.xpath("//span[contains(@class,'md')]")).getText();
 		System.out.println(txt);
 		driver.quit();
 	}
