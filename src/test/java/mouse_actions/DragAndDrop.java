@@ -14,12 +14,12 @@ public class DragAndDrop {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://demoapps.qspiders.com/ui/dragDrop/dragToCorrect?sublist=2");
-		WebElement src1 = driver.findElement(By.xpath("//div[text()='Mobile Charger']"));
-		WebElement src2 = driver.findElement(By.xpath("//div[text()='Laptop Charger']"));
-		WebElement src3 = driver.findElement(By.xpath("//div[text()='Mobile Cover']"));
-		WebElement src4 = driver.findElement(By.xpath("//div[text()='Laptop Cover']"));
-		WebElement dest1 = driver.findElement(By.xpath("//div[text()='Mobile Accessories']"));
-		WebElement dest2 = driver.findElement(By.xpath("//div[text()='Laptop Accessories']"));
+		WebElement src1 = driver.findElement(By.xpath("//div[.='Mobile Charger']"));
+		WebElement src2 = driver.findElement(By.xpath("//div[.='Laptop Charger']"));
+		WebElement src3 = driver.findElement(By.xpath("//div[.='Mobile Cover']"));
+		WebElement src4 = driver.findElement(By.xpath("//div[.='Laptop Cover']"));
+		WebElement dest1 = driver.findElement(By.xpath("//div[.='Mobile Accessories']"));
+		WebElement dest2 = driver.findElement(By.xpath("//div[.='Laptop Accessories']"));
 		Actions a = new Actions(driver);
 		Thread.sleep(1000);
 		a.dragAndDrop(src1, dest1).perform();
