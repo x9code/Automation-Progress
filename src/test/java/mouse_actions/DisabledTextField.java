@@ -17,7 +17,13 @@ public class DisabledTextField {
 		WebElement name = driver.findElement(By.id("name"));
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		Thread.sleep(3000);
-		j.executeScript("arguments[0].value='deepak@gmail.com'", name);
+		j.executeScript("arguments[0].value='deepak'", name);
+		WebElement email = driver.findElement(By.id("email"));
+		Thread.sleep(3000);
+		j.executeScript("arguments[0].value='deepak@gmail.com'", email);
+		WebElement pass = driver.findElement(By.id("password"));
+		Thread.sleep(3000);
+		j.executeScript("arguments[0].value='deepak123456'", pass);
 		Thread.sleep(5000);
 		driver.quit();
 	}
