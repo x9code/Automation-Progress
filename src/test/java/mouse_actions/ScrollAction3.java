@@ -16,6 +16,8 @@ public class ScrollAction3 {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		//j.executeScript("window.scrollBy(0,"+y+")");
 		j.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+		Thread.sleep(2000);
+		j.executeScript("window.scrollTo(0,0)");
 		Thread.sleep(4000);
 		driver.quit();
 	}
