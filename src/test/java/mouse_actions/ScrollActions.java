@@ -11,8 +11,10 @@ public class ScrollActions {
 		driver.get("https://www.bbc.com/");
 		Thread.sleep(2000);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
-		j.executeScript("window.scrollBy(0,5000)");
-		Thread.sleep(5000);
+		j.executeScript("window.scrollBy(0,5000)");//scroll-down along the y-axis 5000pxls
+		Thread.sleep(2000);
+		j.executeScript("window.scrollBy(0,-5000)");//scroll-up along the y-axis 5000pxls
+		Thread.sleep(2000);
 		driver.quit();
 	}
 }
