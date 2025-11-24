@@ -14,7 +14,8 @@ public class ScrollAction3 {
 		int y = driver.findElement(By.linkText("Content Index")).getLocation().getY();
 		Thread.sleep(2000);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
-		j.executeScript("window.scrollBy(0,"+y+")");
+		//j.executeScript("window.scrollBy(0,"+y+")");
+		j.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 		Thread.sleep(4000);
 		driver.quit();
 	}
