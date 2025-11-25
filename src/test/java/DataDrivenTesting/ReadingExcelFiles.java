@@ -2,7 +2,6 @@ package DataDrivenTesting;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -18,7 +17,7 @@ public class ReadingExcelFiles {
 		for(int r = 0;r<=rows;r++) {
 			XSSFRow currentRow = sheet.getRow(r);
 			for(int c = 0 ; c < cells ; c++) {
-				System.out.print(currentRow.getCell(c).toString()+"\t");
+				System.out.printf("%-15s",currentRow.getCell(c).toString());
 			}
 			System.out.println();
 		}
