@@ -10,7 +10,7 @@ public class ScrollAction1 {
 		driver.manage().window().maximize();
 		driver.get("https://www.bbc.com/");
 		Thread.sleep(2000);
-		JavascriptExecutor j = (JavascriptExecutor) driver;
+		JavascriptExecutor j = (JavascriptExecutor) driver;//explicit type-casting
 		j.executeScript("window.scrollBy(0,5000)");//scroll-down along the y-axis 5000px
 		Thread.sleep(2000);
 		j.executeScript("window.scrollBy(0,-5000)");//scroll-up along the y-axis 5000px

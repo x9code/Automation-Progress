@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Right_click {
+public class Right_click1 {
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
