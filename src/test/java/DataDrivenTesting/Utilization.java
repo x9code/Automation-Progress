@@ -11,9 +11,9 @@ public class Utilization {
 		String un = m.readDataFromProperty("username");
 		String pwd = m.readDataFromProperty("password");
 		String br = m.readDataFromProperty("browser");
-		System.out.println(url);
-		System.out.println(un);
-		System.out.println(pwd);
-		System.out.println(br);
+		System.out.println("url:"+url);
+		System.out.println("username :"+un);
+		System.out.println("password :"+pwd);
+		System.out.println("browser :"+br);
 	}
 }
