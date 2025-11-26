@@ -17,7 +17,7 @@ public class ReadingExcelFiles2 {
 		for(int r = 0;r<=rows;r++) {
 			XSSFRow currentRow = sheet.getRow(r);
 			for(int c = 0 ; c < cells ; c++) {
-				System.out.printf("%-40s",currentRow.getCell(c).toString());
+				System.out.printf("%-35s",currentRow.getCell(c).toString());
 			}
 			System.out.println();
 		}
