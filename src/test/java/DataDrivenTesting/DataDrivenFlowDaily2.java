@@ -1,4 +1,4 @@
-package daily;
+package DataDrivenTesting;
 
 import java.awt.AWTException;
 import java.awt.Robot;
