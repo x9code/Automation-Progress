@@ -22,6 +22,6 @@ public class DataDrivenFlow3 {
 		ReadExcelFiles ex = new ReadExcelFiles();
 		String serialNo = ex.readExcelfile("Customer Data", 2, 0);
 		String name = ex.readExcelfile("Customer Data", 2, 1);
-		System.out.println(serialNo +"  "+name);
+		System.out.println((int)Double.parseDouble(serialNo)+"  "+name);
 	}
 }
