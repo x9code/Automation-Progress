@@ -2,7 +2,9 @@ package DataDrivenTesting;
 
 import java.io.IOException;
 import com.ActiTime.GenericLibrary.FileUtility;
-
+/**
+ * Utilizing all generic methods of FileUtility class
+ */
 public class Utilization2 {
 	public static void main(String[] args) throws IOException {
 		FileUtility f = new FileUtility();

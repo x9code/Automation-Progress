@@ -13,6 +13,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.ActiTime.GenericLibrary.FileUtility;
+
 import all_methods.Methods1;
 import all_methods.ReadPropertyFiles;
 
@@ -21,7 +23,7 @@ public class DataDrivenFlow {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ReadPropertyFiles m = new ReadPropertyFiles();
+		FileUtility m = new FileUtility();
 		String url = m.readDataFromProperty("url");
 		String un = m.readDataFromProperty("username");
 		String pwd = m.readDataFromProperty("password");
