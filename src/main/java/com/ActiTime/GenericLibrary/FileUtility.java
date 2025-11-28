@@ -21,6 +21,7 @@ public class FileUtility {
 		 * @return String
 		 * @throws EncryptedDocumentException
 		 * @throws IOException
+		 * @author Deepak
 		 */
 		public String readExcelfile(String sheet, int row, int cell ) throws EncryptedDocumentException, IOException {
 			FileInputStream file = new FileInputStream("D:\\eclipse\\Automation\\testdata\\customer_data.xlsx");
@@ -33,6 +34,7 @@ public class FileUtility {
 		 * @param key
 		 * @return String
 		 * @throws IOException
+		 * @author Deepak
 		 */
 		public String readDataFromProperty(String key) throws IOException {
 			FileInputStream f = new FileInputStream("D:\\eclipse\\Automation\\testdata\\commondataDDT.property");
@@ -48,6 +50,7 @@ public class FileUtility {
 		 * @return double
 		 * @throws EncryptedDocumentException
 		 * @throws IOException
+		 * @author Deepak
 		 */
 		public double readExcelfileNumeric(String sheet, int row, int cell ) throws EncryptedDocumentException, IOException {
 			FileInputStream file = new FileInputStream("D:\\eclipse\\Automation\\testdata\\customer_data.xlsx");
@@ -62,6 +65,7 @@ public class FileUtility {
 		 * @param cell
 		 * @throws EncryptedDocumentException
 		 * @throws IOException
+		 * @author Deepak
 		 */
 		public void updateExcelData(String newData, int row, int cell) throws EncryptedDocumentException, IOException {
 			FileInputStream file = new FileInputStream("D:\\eclipse\\Automation\\testdata\\customer_data.xlsx");
@@ -71,6 +75,13 @@ public class FileUtility {
 			wb.write(fo);
 			wb.close();
 		}
+		/**
+		 * this method will read the whole excel file 
+		 * @author Deepak 
+		 * @param sheet
+		 * @throws EncryptedDocumentException
+		 * @throws IOException
+		 */
 		public void readWholeExcelFile(String sheet) throws EncryptedDocumentException, IOException {
 			FileInputStream file = new FileInputStream("D:\\eclipse\\Automation\\testdata\\customer_data.xlsx");
 			Workbook wb = WorkbookFactory.create(file);
