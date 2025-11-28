@@ -23,7 +23,7 @@ public class DDTWorkBookFactory2 {
 //				String data = cr.getCell(j).toString();
 //				System.out.printf("%-35s",data);
 //			}
-		for(int r = 1;r <= rows;r++) {
+		for(int r = 0;r <= rows;r++) {
 			Row cr = sh.getRow(r);
 			for(int c = 1 ; c <= 1 ; c++) {
 				String un = cr.getCell(c).toString();

@@ -53,7 +53,7 @@ public class DataDrivenFlowDaily {
 				String desc = cr.getCell(c+1).toString();
 				System.out.println(username+"            "+desc);
 				driver.findElement(By.xpath("//div[@class='inputContainer']/child::textarea[@placeholder='Enter Customer Description']")).sendKeys(desc);
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				r.keyPress(KeyEvent.VK_CONTROL);
 				r.keyPress(KeyEvent.VK_A);
 				r.keyRelease(KeyEvent.VK_CONTROL);

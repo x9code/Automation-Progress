@@ -12,9 +12,10 @@ public class ReadingExcelFiles2 {
 		XSSFWorkbook wb = new XSSFWorkbook(file);
 		XSSFSheet sheet = wb.getSheet("Customer Data");
 		int rows = sheet.getLastRowNum();
+		System.out.println(rows);
 		short cells = sheet.getRow(1).getLastCellNum();
 		//System.out.println(rows +" "+cells);
-		for(int r = 0;r<=rows;r++) {
+		for(int r = 0; r<=rows ; r++) {
 			XSSFRow currentRow = sheet.getRow(r);
 			for(int c = 0 ; c < cells ; c++) {
 				System.out.printf("%-35s",currentRow.getCell(c).toString());
