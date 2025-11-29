@@ -1,0 +1,17 @@
+TestNG(Test Next Generation):
+ - it is a unit testing tool.
+ - used by both Development team to do WBT and Automation Test Engineers to do BBT.
+ - It is combination of JUnit + NUnit.
+ Advantages of using TestNG : 
+ In TestNG we can perform
+ -  batch execution
+ -  Group execution
+ -  parallel execution
+ -  we can generate report for test execution automatically
+ -  Reporter 
+ -  Assertion
+ -   
+Rule for TestNG : 
+1. classes should not created in default package
+2. main() is not used 
+3. System.out.print() is not used
