@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 
 
-public class CreateCustomer {
+public class UpdateCustomer {
 	@Test (priority = 2, dependsOnMethods = "deleteCustomer" )
 	public void createCustomer() {
 		Reporter.log("created Customer",true);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="1" skipped="1">
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[added Customer]]>
@@ -13,117 +13,247 @@
     <line>
       <![CDATA[updated Customer]]>
     </line>
+    <line>
+      <![CDATA[deleted Customer]]>
+    </line>
+    <line>
+      <![CDATA[created Customer]]>
+    </line>
+    <line>
+      <![CDATA[added Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[deleted Customer]]>
+    </line>
+    <line>
+      <![CDATA[created Customer]]>
+    </line>
+    <line>
+      <![CDATA[added Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[deleted Customer]]>
+    </line>
+    <line>
+      <![CDATA[created Customer]]>
+    </line>
+    <line>
+      <![CDATA[added Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[updated Customer]]>
+    </line>
+    <line>
+      <![CDATA[deleted Customer]]>
+    </line>
+    <line>
+      <![CDATA[created Customer]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-11-29T10:43:11 IST" name="Default suite" finished-at="2025-11-29T10:43:11 IST" duration-ms="122">
+  <suite started-at="2025-11-29T11:40:18 IST" name="Suite" finished-at="2025-11-29T11:40:18 IST" duration-ms="200">
     <groups>
     </groups>
-    <test started-at="2025-11-29T10:43:11 IST" name="Default test" finished-at="2025-11-29T10:43:11 IST" duration-ms="122">
-      <class name="testng_scripts.CreateCustomer">
-        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.CreateCustomer@7586beff]" started-at="2025-11-29T10:43:11 IST" name="addCustomer" finished-at="2025-11-29T10:43:11 IST" duration-ms="13" status="PASS">
+    <test started-at="2025-11-29T11:40:18 IST" name="Test" finished-at="2025-11-29T11:40:18 IST" duration-ms="200">
+      <class name="testng_scripts.DeleteCustomer">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.DeleteCustomer@702657cc]" started-at="2025-11-29T11:40:18 IST" name="addCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[added Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.CreateCustomer@7586beff]" started-at="2025-11-29T10:43:11 IST" name="updateCustomer" finished-at="2025-11-29T10:43:11 IST" duration-ms="5" status="PASS">
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.DeleteCustomer@702657cc]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[updated Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- updateCustomer -->
-        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.CreateCustomer@7586beff]" started-at="2025-11-29T10:43:11 IST" name="updateCustomer" finished-at="2025-11-29T10:43:11 IST" duration-ms="3" status="PASS">
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.DeleteCustomer@702657cc]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[updated Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- updateCustomer -->
-        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.CreateCustomer@7586beff]" started-at="2025-11-29T10:43:11 IST" name="updateCustomer" finished-at="2025-11-29T10:43:11 IST" duration-ms="3" status="PASS">
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.DeleteCustomer@702657cc]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[updated Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- updateCustomer -->
-        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.CreateCustomer@7586beff]" started-at="2025-11-29T10:43:11 IST" name="deleteCustomer" finished-at="2025-11-29T10:43:11 IST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at testng_scripts.CreateCustomer.deleteCustomer(CreateCustomer.java:16)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.DeleteCustomer@702657cc]" started-at="2025-11-29T11:40:18 IST" name="deleteCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[deleted Customer]]>
+            </line>
           </reporter-output>
         </test-method> <!-- deleteCustomer -->
-        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.CreateCustomer@7586beff]" started-at="2025-11-29T10:43:11 IST" name="createCustomer" finished-at="2025-11-29T10:43:11 IST" depends-on-methods="testng_scripts.CreateCustomer.deleteCustomer" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method testng_scripts.CreateCustomer.createCustomer() on instance testng_scripts.CreateCustomer@7586beff depends on not successfully finished methods 
-[testng_scripts.CreateCustomer.deleteCustomer() on instance testng_scripts.CreateCustomer@7586beff]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testng_scripts.CreateCustomer.createCustomer() on instance testng_scripts.CreateCustomer@7586beff depends on not successfully finished methods 
-[testng_scripts.CreateCustomer.deleteCustomer() on instance testng_scripts.CreateCustomer@7586beff]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.DeleteCustomer@702657cc]" started-at="2025-11-29T11:40:18 IST" name="createCustomer" finished-at="2025-11-29T11:40:18 IST" depends-on-methods="testng_scripts.DeleteCustomer.deleteCustomer" duration-ms="2" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[created Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+      </class> <!-- testng_scripts.DeleteCustomer -->
+      <class name="testng_scripts.UpdateCustomer">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.UpdateCustomer@43bc63a3]" started-at="2025-11-29T11:40:18 IST" name="addCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[added Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.UpdateCustomer@43bc63a3]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.UpdateCustomer@43bc63a3]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.UpdateCustomer@43bc63a3]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.UpdateCustomer@43bc63a3]" started-at="2025-11-29T11:40:18 IST" name="deleteCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[deleted Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.UpdateCustomer@43bc63a3]" started-at="2025-11-29T11:40:18 IST" name="createCustomer" finished-at="2025-11-29T11:40:18 IST" depends-on-methods="testng_scripts.UpdateCustomer.deleteCustomer" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[created Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+      </class> <!-- testng_scripts.UpdateCustomer -->
+      <class name="testng_scripts.AddCustomer">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.AddCustomer@292b08d6]" started-at="2025-11-29T11:40:18 IST" name="addCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[added Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.AddCustomer@292b08d6]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.AddCustomer@292b08d6]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.AddCustomer@292b08d6]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.AddCustomer@292b08d6]" started-at="2025-11-29T11:40:18 IST" name="deleteCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[deleted Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.AddCustomer@292b08d6]" started-at="2025-11-29T11:40:18 IST" name="createCustomer" finished-at="2025-11-29T11:40:18 IST" depends-on-methods="testng_scripts.AddCustomer.deleteCustomer" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[created Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+      </class> <!-- testng_scripts.AddCustomer -->
+      <class name="testng_scripts.CreateCustomer">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.CreateCustomer@6a6cb05c]" started-at="2025-11-29T11:40:18 IST" name="addCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[added Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.CreateCustomer@6a6cb05c]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.CreateCustomer@6a6cb05c]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="updateCustomer()[pri:3, instance:testng_scripts.CreateCustomer@6a6cb05c]" started-at="2025-11-29T11:40:18 IST" name="updateCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[updated Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.CreateCustomer@6a6cb05c]" started-at="2025-11-29T11:40:18 IST" name="deleteCustomer" finished-at="2025-11-29T11:40:18 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[deleted Customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.CreateCustomer@6a6cb05c]" started-at="2025-11-29T11:40:18 IST" name="createCustomer" finished-at="2025-11-29T11:40:18 IST" depends-on-methods="testng_scripts.CreateCustomer.deleteCustomer" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[created Customer]]>
+            </line>
           </reporter-output>
         </test-method> <!-- createCustomer -->
       </class> <!-- testng_scripts.CreateCustomer -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

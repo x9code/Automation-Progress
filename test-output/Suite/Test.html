@@ -1,0 +1,368 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Nov 29 11:40:18 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (200 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng_scripts.UpdateCustomer.addCustomer()'><b>addCustomer</b><br>Test class: testng_scripts.UpdateCustomer<br/>
+<a href="#Output-270095066" onClick='toggleBox("Output-270095066", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-270095066" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-270095066">
+added Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.UpdateCustomer@43bc63a3</td></tr>
+<tr>
+<td title='testng_scripts.AddCustomer.deleteCustomer()'><b>deleteCustomer</b><br>Test class: testng_scripts.AddCustomer<br/>
+<a href="#Output-1771667101" onClick='toggleBox("Output-1771667101", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1771667101" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1771667101">
+deleted Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.AddCustomer@292b08d6</td></tr>
+<tr>
+<td title='testng_scripts.CreateCustomer.addCustomer()'><b>addCustomer</b><br>Test class: testng_scripts.CreateCustomer<br/>
+<a href="#Output-1270038388" onClick='toggleBox("Output-1270038388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1270038388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1270038388">
+added Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.CreateCustomer@6a6cb05c</td></tr>
+<tr>
+<td title='testng_scripts.DeleteCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.DeleteCustomer<br/>
+<a href="#Output-726181440" onClick='toggleBox("Output-726181440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-726181440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-726181440">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.DeleteCustomer@702657cc</td></tr>
+<tr>
+<td title='testng_scripts.UpdateCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.UpdateCustomer<br/>
+<a href="#Output-2125062626" onClick='toggleBox("Output-2125062626", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2125062626" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2125062626">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.UpdateCustomer@43bc63a3</td></tr>
+<tr>
+<td title='testng_scripts.DeleteCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.DeleteCustomer<br/>
+<a href="#Output-1292040526" onClick='toggleBox("Output-1292040526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292040526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292040526">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.DeleteCustomer@702657cc</td></tr>
+<tr>
+<td title='testng_scripts.UpdateCustomer.deleteCustomer()'><b>deleteCustomer</b><br>Test class: testng_scripts.UpdateCustomer<br/>
+<a href="#Output-620557167" onClick='toggleBox("Output-620557167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-620557167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-620557167">
+deleted Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.UpdateCustomer@43bc63a3</td></tr>
+<tr>
+<td title='testng_scripts.AddCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.AddCustomer<br/>
+<a href="#Output-890545344" onClick='toggleBox("Output-890545344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-890545344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-890545344">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.AddCustomer@292b08d6</td></tr>
+<tr>
+<td title='testng_scripts.UpdateCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.UpdateCustomer<br/>
+<a href="#Output-1806431167" onClick='toggleBox("Output-1806431167", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1806431167" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1806431167">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.UpdateCustomer@43bc63a3</td></tr>
+<tr>
+<td title='testng_scripts.AddCustomer.createCustomer()'><b>createCustomer</b><br>Test class: testng_scripts.AddCustomer<br/>
+<a href="#Output-865667596" onClick='toggleBox("Output-865667596", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-865667596" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-865667596">
+created Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.AddCustomer@292b08d6</td></tr>
+<tr>
+<td title='testng_scripts.DeleteCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.DeleteCustomer<br/>
+<a href="#Output-510147134" onClick='toggleBox("Output-510147134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510147134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510147134">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.DeleteCustomer@702657cc</td></tr>
+<tr>
+<td title='testng_scripts.CreateCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.CreateCustomer<br/>
+<a href="#Output-63387985" onClick='toggleBox("Output-63387985", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-63387985" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-63387985">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.CreateCustomer@6a6cb05c</td></tr>
+<tr>
+<td title='testng_scripts.DeleteCustomer.addCustomer()'><b>addCustomer</b><br>Test class: testng_scripts.DeleteCustomer<br/>
+<a href="#Output-245765246" onClick='toggleBox("Output-245765246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-245765246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-245765246">
+added Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.DeleteCustomer@702657cc</td></tr>
+<tr>
+<td title='testng_scripts.DeleteCustomer.createCustomer()'><b>createCustomer</b><br>Test class: testng_scripts.DeleteCustomer<br/>
+<a href="#Output-2051120548" onClick='toggleBox("Output-2051120548", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2051120548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2051120548">
+created Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.DeleteCustomer@702657cc</td></tr>
+<tr>
+<td title='testng_scripts.CreateCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.CreateCustomer<br/>
+<a href="#Output-1973233403" onClick='toggleBox("Output-1973233403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1973233403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1973233403">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.CreateCustomer@6a6cb05c</td></tr>
+<tr>
+<td title='testng_scripts.CreateCustomer.deleteCustomer()'><b>deleteCustomer</b><br>Test class: testng_scripts.CreateCustomer<br/>
+<a href="#Output-1866875501" onClick='toggleBox("Output-1866875501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866875501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866875501">
+deleted Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.CreateCustomer@6a6cb05c</td></tr>
+<tr>
+<td title='testng_scripts.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: testng_scripts.CreateCustomer<br/>
+<a href="#Output-1936722816" onClick='toggleBox("Output-1936722816", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1936722816" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1936722816">
+created Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.CreateCustomer@6a6cb05c</td></tr>
+<tr>
+<td title='testng_scripts.CreateCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.CreateCustomer<br/>
+<a href="#Output-1029472813" onClick='toggleBox("Output-1029472813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1029472813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1029472813">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.CreateCustomer@6a6cb05c</td></tr>
+<tr>
+<td title='testng_scripts.AddCustomer.addCustomer()'><b>addCustomer</b><br>Test class: testng_scripts.AddCustomer<br/>
+<a href="#Output-1832532108" onClick='toggleBox("Output-1832532108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1832532108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1832532108">
+added Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.AddCustomer@292b08d6</td></tr>
+<tr>
+<td title='testng_scripts.UpdateCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.UpdateCustomer<br/>
+<a href="#Output-50699452" onClick='toggleBox("Output-50699452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50699452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50699452">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.UpdateCustomer@43bc63a3</td></tr>
+<tr>
+<td title='testng_scripts.UpdateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: testng_scripts.UpdateCustomer<br/>
+<a href="#Output-285133380" onClick='toggleBox("Output-285133380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-285133380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-285133380">
+created Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.UpdateCustomer@43bc63a3</td></tr>
+<tr>
+<td title='testng_scripts.DeleteCustomer.deleteCustomer()'><b>deleteCustomer</b><br>Test class: testng_scripts.DeleteCustomer<br/>
+<a href="#Output-542365801" onClick='toggleBox("Output-542365801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-542365801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-542365801">
+deleted Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.DeleteCustomer@702657cc</td></tr>
+<tr>
+<td title='testng_scripts.AddCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.AddCustomer<br/>
+<a href="#Output-71706941" onClick='toggleBox("Output-71706941", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-71706941" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-71706941">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.AddCustomer@292b08d6</td></tr>
+<tr>
+<td title='testng_scripts.AddCustomer.updateCustomer()'><b>updateCustomer</b><br>Test class: testng_scripts.AddCustomer<br/>
+<a href="#Output-556488341" onClick='toggleBox("Output-556488341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-556488341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-556488341">
+updated Customer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng_scripts.AddCustomer@292b08d6</td></tr>
+</table><p>
+</body>
+</html>
