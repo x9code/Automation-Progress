@@ -14,7 +14,7 @@ public class CreateCustomer {
 	public void deleteCustomer() {
 		Reporter.log("deleted Customer",true);
 	}
-	@Test (priority = 3)
+	@Test (priority = 3, invocationCount = 3)
 	public void updateCustomer() {
 		Reporter.log("updated Customer",true);
 	}
