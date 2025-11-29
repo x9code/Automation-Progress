@@ -17,3 +17,8 @@ Rule for TestNG :
  1. classes should not created in default package
  2. main() is not used 
  3. System.out.print() is not used
+ 
+ Points : 
+ 1. we can give priority and invocation count for a particular test script.
+   e.g. @Test (priority = 3, invocationCount = 3)
+ 2. 
