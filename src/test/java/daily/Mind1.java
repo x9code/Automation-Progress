@@ -28,6 +28,7 @@ public class Mind1 {
 		Set<String> wids = driver.getWindowHandles();
 		Iterator<String> itr = wids.iterator();
 		String parent = itr.next();
+		System.out.println(parent);
 		itr.next();
 		itr.next();
 		String c3 = itr.next();
