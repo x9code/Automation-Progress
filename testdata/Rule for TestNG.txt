@@ -21,10 +21,10 @@ Rule for TestNG :
  3. System.out.print() is not used instead use Reporter.log("hello world",true);
  
  Points : 
- 1. we can give priority and invocation count for a particular test script.
-   e.g. @Test (priority = 3, invocationCount = 3)
- 2. we can give dependency to a test script based execution of other test scripts
-   e.g. @Test (dependsOnMethods = "CreateCustomer")
+ 1. We can give priority and invocation count for a particular test script.
+    e.g. @Test (priority = 3, invocationCount = 3)
+ 2. We can give dependency to a test script based execution of other test scripts
+    e.g. @Test (dependsOnMethods = "CreateCustomer")
  3. We can intentionally fail a test script by using Asset class
-   e.g. Assert.fail();
+    e.g. Assert.fail();
  4. 

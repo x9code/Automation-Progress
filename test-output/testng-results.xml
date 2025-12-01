@@ -5,110 +5,110 @@
       <![CDATA[added Customer]]>
     </line>
     <line>
-      <![CDATA[created Customer]]>
+      <![CDATA[deleted Customer]]>
     </line>
     <line>
       <![CDATA[added Customer]]>
     </line>
     <line>
-      <![CDATA[created Customer]]>
+      <![CDATA[deleted Customer]]>
     </line>
     <line>
       <![CDATA[added Customer]]>
     </line>
     <line>
-      <![CDATA[created Customer]]>
+      <![CDATA[deleted Customer]]>
     </line>
     <line>
       <![CDATA[added Customer]]>
     </line>
     <line>
-      <![CDATA[created Customer]]>
+      <![CDATA[deleted Customer]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-12-01T11:14:10 IST" name="Suite" finished-at="2025-12-01T11:14:11 IST" duration-ms="104">
+  <suite started-at="2025-12-01T19:23:39 IST" name="Suite" finished-at="2025-12-01T19:23:39 IST" duration-ms="118">
     <groups>
       <group name="regression">
         <method signature="AddCustomer.addCustomer()[pri:1, instance:testng_scripts.AddCustomer@38425407]" name="addCustomer" class="testng_scripts.AddCustomer"/>
         <method signature="CreateCustomer.addCustomer()[pri:1, instance:testng_scripts.CreateCustomer@5b12b668]" name="addCustomer" class="testng_scripts.CreateCustomer"/>
         <method signature="DeleteCustomer.addCustomer()[pri:1, instance:testng_scripts.DeleteCustomer@327514f]" name="addCustomer" class="testng_scripts.DeleteCustomer"/>
         <method signature="UpdateCustomer.addCustomer()[pri:1, instance:testng_scripts.UpdateCustomer@4c402120]" name="addCustomer" class="testng_scripts.UpdateCustomer"/>
+        <method signature="AddCustomer.deleteCustomer()[pri:4, instance:testng_scripts.AddCustomer@38425407]" name="deleteCustomer" class="testng_scripts.AddCustomer"/>
+        <method signature="CreateCustomer.deleteCustomer()[pri:4, instance:testng_scripts.CreateCustomer@5b12b668]" name="deleteCustomer" class="testng_scripts.CreateCustomer"/>
+        <method signature="DeleteCustomer.deleteCustomer()[pri:4, instance:testng_scripts.DeleteCustomer@327514f]" name="deleteCustomer" class="testng_scripts.DeleteCustomer"/>
+        <method signature="UpdateCustomer.deleteCustomer()[pri:4, instance:testng_scripts.UpdateCustomer@4c402120]" name="deleteCustomer" class="testng_scripts.UpdateCustomer"/>
       </group> <!-- regression -->
       <group name="smoke">
         <method signature="AddCustomer.addCustomer()[pri:1, instance:testng_scripts.AddCustomer@38425407]" name="addCustomer" class="testng_scripts.AddCustomer"/>
         <method signature="CreateCustomer.addCustomer()[pri:1, instance:testng_scripts.CreateCustomer@5b12b668]" name="addCustomer" class="testng_scripts.CreateCustomer"/>
         <method signature="DeleteCustomer.addCustomer()[pri:1, instance:testng_scripts.DeleteCustomer@327514f]" name="addCustomer" class="testng_scripts.DeleteCustomer"/>
         <method signature="UpdateCustomer.addCustomer()[pri:1, instance:testng_scripts.UpdateCustomer@4c402120]" name="addCustomer" class="testng_scripts.UpdateCustomer"/>
-        <method signature="AddCustomer.createCustomer()[pri:2, instance:testng_scripts.AddCustomer@38425407]" name="createCustomer" class="testng_scripts.AddCustomer"/>
-        <method signature="CreateCustomer.createCustomer()[pri:2, instance:testng_scripts.CreateCustomer@5b12b668]" name="createCustomer" class="testng_scripts.CreateCustomer"/>
-        <method signature="DeleteCustomer.createCustomer()[pri:2, instance:testng_scripts.DeleteCustomer@327514f]" name="createCustomer" class="testng_scripts.DeleteCustomer"/>
-        <method signature="UpdateCustomer.createCustomer()[pri:2, instance:testng_scripts.UpdateCustomer@4c402120]" name="createCustomer" class="testng_scripts.UpdateCustomer"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-12-01T11:14:10 IST" name="Test" finished-at="2025-12-01T11:14:11 IST" duration-ms="104">
+    <test started-at="2025-12-01T19:23:39 IST" name="Test" finished-at="2025-12-01T19:23:39 IST" duration-ms="118">
       <class name="testng_scripts.DeleteCustomer">
-        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.DeleteCustomer@327514f]" started-at="2025-12-01T11:14:10 IST" name="addCustomer" finished-at="2025-12-01T11:14:11 IST" duration-ms="2" status="PASS">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.DeleteCustomer@327514f]" started-at="2025-12-01T19:23:39 IST" name="addCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[added Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.DeleteCustomer@327514f]" started-at="2025-12-01T11:14:11 IST" name="createCustomer" finished-at="2025-12-01T11:14:11 IST" duration-ms="2" status="PASS">
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.DeleteCustomer@327514f]" started-at="2025-12-01T19:23:39 IST" name="deleteCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[created Customer]]>
+              <![CDATA[deleted Customer]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createCustomer -->
+        </test-method> <!-- deleteCustomer -->
       </class> <!-- testng_scripts.DeleteCustomer -->
       <class name="testng_scripts.UpdateCustomer">
-        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.UpdateCustomer@4c402120]" started-at="2025-12-01T11:14:10 IST" name="addCustomer" finished-at="2025-12-01T11:14:10 IST" duration-ms="3" status="PASS">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.UpdateCustomer@4c402120]" started-at="2025-12-01T19:23:39 IST" name="addCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="6" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[added Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.UpdateCustomer@4c402120]" started-at="2025-12-01T11:14:10 IST" name="createCustomer" finished-at="2025-12-01T11:14:10 IST" duration-ms="3" status="PASS">
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.UpdateCustomer@4c402120]" started-at="2025-12-01T19:23:39 IST" name="deleteCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[created Customer]]>
+              <![CDATA[deleted Customer]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createCustomer -->
+        </test-method> <!-- deleteCustomer -->
       </class> <!-- testng_scripts.UpdateCustomer -->
       <class name="testng_scripts.AddCustomer">
-        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.AddCustomer@38425407]" started-at="2025-12-01T11:14:10 IST" name="addCustomer" finished-at="2025-12-01T11:14:10 IST" duration-ms="10" status="PASS">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.AddCustomer@38425407]" started-at="2025-12-01T19:23:39 IST" name="addCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="18" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[added Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.AddCustomer@38425407]" started-at="2025-12-01T11:14:10 IST" name="createCustomer" finished-at="2025-12-01T11:14:10 IST" duration-ms="2" status="PASS">
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.AddCustomer@38425407]" started-at="2025-12-01T19:23:39 IST" name="deleteCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[created Customer]]>
+              <![CDATA[deleted Customer]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createCustomer -->
+        </test-method> <!-- deleteCustomer -->
       </class> <!-- testng_scripts.AddCustomer -->
       <class name="testng_scripts.CreateCustomer">
-        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.CreateCustomer@5b12b668]" started-at="2025-12-01T11:14:11 IST" name="addCustomer" finished-at="2025-12-01T11:14:11 IST" duration-ms="1" status="PASS">
+        <test-method signature="addCustomer()[pri:1, instance:testng_scripts.CreateCustomer@5b12b668]" started-at="2025-12-01T19:23:39 IST" name="addCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[added Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="createCustomer()[pri:2, instance:testng_scripts.CreateCustomer@5b12b668]" started-at="2025-12-01T11:14:11 IST" name="createCustomer" finished-at="2025-12-01T11:14:11 IST" duration-ms="2" status="PASS">
+        <test-method signature="deleteCustomer()[pri:4, instance:testng_scripts.CreateCustomer@5b12b668]" started-at="2025-12-01T19:23:39 IST" name="deleteCustomer" finished-at="2025-12-01T19:23:39 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[created Customer]]>
+              <![CDATA[deleted Customer]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createCustomer -->
+        </test-method> <!-- deleteCustomer -->
       </class> <!-- testng_scripts.CreateCustomer -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
