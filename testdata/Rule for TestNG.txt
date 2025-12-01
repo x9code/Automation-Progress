@@ -27,3 +27,4 @@ Rule for TestNG :
    e.g. @Test (dependsOnMethods = "CreateCustomer")
  3. We can intentionally fail a test script by using Asset class
    e.g. Assert.fail();
+ 4. 
