@@ -1,0 +1,4 @@
+WebDriverManager.chromedriver().setup() :
+this method automatically downloads the correct version of ChromeDriver 
+that matches the installed Chrome browser and sets the required system property so Selenium 
+can launch the browser without manually managing driver executables.
