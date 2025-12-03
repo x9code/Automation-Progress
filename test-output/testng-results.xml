@@ -1,143 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[database connected...]]>
+      <![CDATA[database connected successfully]]>
     </line>
     <line>
-      <![CDATA[browser launched.....]]>
+      <![CDATA[browser launched]]>
     </line>
     <line>
-      <![CDATA[logged in...]]>
+      <![CDATA[logged in]]>
     </line>
     <line>
-      <![CDATA[added customer....]]>
+      <![CDATA[test 2]]>
     </line>
     <line>
-      <![CDATA[logged out]]>
+      <![CDATA[logged out successfully]]>
     </line>
     <line>
-      <![CDATA[logged in...]]>
+      <![CDATA[logged in]]>
     </line>
     <line>
-      <![CDATA[customer created...]]>
+      <![CDATA[test 1]]>
     </line>
     <line>
-      <![CDATA[logged out]]>
+      <![CDATA[logged out successfully]]>
     </line>
     <line>
-      <![CDATA[logged in...]]>
+      <![CDATA[browser closed]]>
     </line>
     <line>
-      <![CDATA[deleted customer]]>
-    </line>
-    <line>
-      <![CDATA[logged out]]>
-    </line>
-    <line>
-      <![CDATA[closed browser]]>
-    </line>
-    <line>
-      <![CDATA[disconnected from database]]>
+      <![CDATA[database disconnected]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-12-02T11:08:23 IST" name="Default suite" finished-at="2025-12-02T11:08:23 IST" duration-ms="91">
+  <suite started-at="2025-12-03T11:58:59 IST" name="Default suite" finished-at="2025-12-03T11:59:27 IST" duration-ms="28410">
     <groups>
     </groups>
-    <test started-at="2025-12-02T11:08:23 IST" name="Default test" finished-at="2025-12-02T11:08:23 IST" duration-ms="91">
-      <class name="testng_scripts.Annotation">
-        <test-method is-config="true" signature="connectToDatabase()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="connectToDatabase" finished-at="2025-12-02T11:08:23 IST" duration-ms="18" status="PASS">
+    <test started-at="2025-12-03T11:58:59 IST" name="Default test" finished-at="2025-12-03T11:59:27 IST" duration-ms="28410">
+      <class name="testng_scripts.TestScriptForActitime">
+        <test-method is-config="true" signature="connectToDatabase()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:58:59 IST" name="connectToDatabase" finished-at="2025-12-03T11:58:59 IST" duration-ms="14" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[database connected...]]>
+              <![CDATA[database connected successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- connectToDatabase -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="launchBrowser" finished-at="2025-12-02T11:08:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:58:59 IST" name="launchBrowser" finished-at="2025-12-03T11:59:07 IST" duration-ms="7512" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[browser launched.....]]>
+              <![CDATA[browser launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="logIn()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="logIn" finished-at="2025-12-02T11:08:23 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="logInToActitime()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:07 IST" name="logInToActitime" finished-at="2025-12-03T11:59:10 IST" duration-ms="3447" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[logged in...]]>
+              <![CDATA[logged in]]>
             </line>
           </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method signature="addCustomer()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="addCustomer" finished-at="2025-12-02T11:08:23 IST" duration-ms="12" status="PASS">
+        </test-method> <!-- logInToActitime -->
+        <test-method signature="addCustomer()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:10 IST" name="addCustomer" finished-at="2025-12-03T11:59:16 IST" duration-ms="6266" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[added customer....]]>
+              <![CDATA[test 2]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="logOut" finished-at="2025-12-02T11:08:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:16 IST" name="logout" finished-at="2025-12-03T11:59:18 IST" duration-ms="1411" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[logged out]]>
+              <![CDATA[logged out successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="logIn()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="logIn" finished-at="2025-12-02T11:08:23 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="logInToActitime()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:18 IST" name="logInToActitime" finished-at="2025-12-03T11:59:21 IST" duration-ms="3442" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[logged in...]]>
+              <![CDATA[logged in]]>
             </line>
           </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method signature="createCustomer()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="createCustomer" finished-at="2025-12-02T11:08:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logInToActitime -->
+        <test-method signature="createCustomer()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:21 IST" name="createCustomer" finished-at="2025-12-03T11:59:24 IST" duration-ms="2772" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[customer created...]]>
+              <![CDATA[test 1]]>
             </line>
           </reporter-output>
         </test-method> <!-- createCustomer -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="logOut" finished-at="2025-12-02T11:08:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:24 IST" name="logout" finished-at="2025-12-03T11:59:27 IST" duration-ms="3034" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[logged out]]>
+              <![CDATA[logged out successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="logIn()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="logIn" finished-at="2025-12-02T11:08:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:27 IST" name="closeBrowser" finished-at="2025-12-03T11:59:27 IST" duration-ms="426" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[logged in...]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method signature="deleteCustomer()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="deleteCustomer" finished-at="2025-12-02T11:08:23 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[deleted customer]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- deleteCustomer -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="logOut" finished-at="2025-12-02T11:08:23 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[logged out]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="closeBrowser" finished-at="2025-12-02T11:08:23 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[closed browser]]>
+              <![CDATA[browser closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="disconnectFromDatabase()[pri:0, instance:testng_scripts.Annotation@fa4c865]" started-at="2025-12-02T11:08:23 IST" name="disconnectFromDatabase" finished-at="2025-12-02T11:08:23 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="disconnectFromDatabase()[pri:0, instance:testng_scripts.TestScriptForActitime@707194ba]" started-at="2025-12-03T11:59:28 IST" name="disconnectFromDatabase" finished-at="2025-12-03T11:59:28 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[disconnected from database]]>
+              <![CDATA[database disconnected]]>
             </line>
           </reporter-output>
         </test-method> <!-- disconnectFromDatabase -->
-      </class> <!-- testng_scripts.Annotation -->
+      </class> <!-- testng_scripts.TestScriptForActitime -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

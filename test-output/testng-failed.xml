@@ -3,12 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_scripts.CreateCustomer">
+      <class name="testng_scripts.TestScriptForActitime">
         <methods>
-          <include name="deleteCustomer"/>
-          <include name="createCustomer"/>
+          <include name="launchBrowser"/>
+          <include name="disconnectFromDatabase"/>
+          <include name="logout"/>
+          <include name="logInToActitime"/>
+          <include name="connectToDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="addCustomer"/>
         </methods>
-      </class> <!-- testng_scripts.CreateCustomer -->
+      </class> <!-- testng_scripts.TestScriptForActitime -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
