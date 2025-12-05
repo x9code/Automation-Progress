@@ -5,7 +5,10 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.bidi.module.Browser;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -13,8 +16,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.ActiTime.GenericLibrary.FileUtility;
+import com.beust.jcommander.Parameter;
 
 public class BaseClass {
 	public WebDriver driver;
@@ -23,9 +28,18 @@ public class BaseClass {
 	public void connectToDatabase() {
 		Reporter.log("database connected successfully",true);
 	}
+	@Parameters("browser")
 	@BeforeTest
-	public void launchBrowser() throws IOException {
-		driver = new ChromeDriver();
+	public void launchBrowser(String browser) throws IOException {
+		if(browser.equals("chrome")) {
+		    driver = new ChromeDriver();
+		}else if(browser.equals("firefox")) {
+			driver = new FirefoxDriver();
+		}else if(browser.equals("edge")) {
+			driver = new EdgeDriver();
+		}else {
+			driver = new ChromeDriver();
+		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		String url = f.readDataFromProperty("url");
