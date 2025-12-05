@@ -1,5 +1,6 @@
 package testng_scripts;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -13,24 +14,30 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.ActiTime.GenericLibrary.FileUtility;
+
 public class BaseClass {
 	public WebDriver driver;
+	FileUtility f = new FileUtility();
 	@BeforeSuite
 	public void connectToDatabase() {
 		Reporter.log("database connected successfully",true);
 	}
 	@BeforeTest
-	public void launchBrowser() {
+	public void launchBrowser() throws IOException {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("https://online.actitime.com/student5/login.do");
+		String url = f.readDataFromProperty("url");
+		driver.get(url);
 		Reporter.log("browser launched",true);
 	}
 	@BeforeMethod
-	public void logInToActitime() throws InterruptedException {
-		driver.findElement(By.id("username")).sendKeys("ballayaautomation@yopmail.com");
-		driver.findElement(By.name("pwd")).sendKeys("ASeYPebD");
+	public void logInToActitime() throws InterruptedException, IOException {
+		String un = f.readDataFromProperty("username");
+		String pwd = f.readDataFromProperty("password");
+		driver.findElement(By.id("username")).sendKeys(un);
+		driver.findElement(By.name("pwd")).sendKeys(pwd);
 		driver.findElement(By.xpath("//div[text()='Login ']")).click();
 		Thread.sleep(3000);
 		Reporter.log("logged in",true);
