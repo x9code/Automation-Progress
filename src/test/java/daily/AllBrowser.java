@@ -18,8 +18,8 @@ public class AllBrowser {
         driver = new FirefoxDriver();
         driver.quit();
 
-        System.out.println("Launching Edge...");
-        driver = new EdgeDriver();   // This should launch Edge
-        driver.quit();
+//        System.out.println("Launching Edge...");
+//        driver = new EdgeDriver(); 
+//        driver.quit();
     }
 }
