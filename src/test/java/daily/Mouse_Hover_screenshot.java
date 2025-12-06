@@ -27,7 +27,7 @@ public class Mouse_Hover_screenshot {
 
         // Take screenshot of element
         File src = ((RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
-        File dest = new File("D:\\assss.png");
+        File dest = new File("./Screenshots/second.png");
         FileHandler.copy(src, dest);
 
         // Get text after hover
