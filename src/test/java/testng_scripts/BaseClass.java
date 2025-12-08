@@ -21,7 +21,7 @@ import org.testng.annotations.Parameters;
 import com.ActiTime.GenericLibrary.FileUtility;
 
 public class BaseClass {
-	public WebDriver driver;
+	public static WebDriver driver;
 	FileUtility f = new FileUtility();
 	@BeforeSuite
 	public void connectToDatabase() {
