@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 
 
-public class DeleteCustomer {
+public class ModifyCustomer {
 	@Test (priority = 2, groups = "smoke")
 	public void createCustomer() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
@@ -46,6 +46,5 @@ public class DeleteCustomer {
 		driver.quit();
 		Reporter.log("added Customer",true);
 	}
-	
 	
 }

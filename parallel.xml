@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests">
+  <test thread-count="1" name="Test 1">
+    <classes>
+      <class name="testng_scripts.AddCustomer"/>
+       </classes>
+  </test> 
+      <test thread-count="1" name="Test 2">
+    <classes>
+      <class name="testng_scripts.UpdateCustomer"/>
+       </classes>
+  </test> 
+      <test thread-count="1" name="Test 3">
+    <classes>
+      <class name="testng_scripts.DeleteCustomer"/>
+       </classes>
+  </test> 
+      <test thread-count="1" name="Test 4">
+    <classes>
+      <class name="testng_scripts.CreateCustomer"/>
+    </classes>
+  </test>
+     <test thread-count="1" name="Test 5">
+    <classes>
+      <class name="testng_scripts.ModifyCustomer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

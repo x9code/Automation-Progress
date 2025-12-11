@@ -5,5 +5,5 @@
     <classes>
       <class name="testng_scripts.TestScriptForActitime"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

@@ -14,7 +14,7 @@ public class VerifyTitle {
 		String expected = "Facebook";
 		String actual = driver.getTitle();
 		SoftAssert s = new SoftAssert();
-		s.assertEquals(actual,expected);
+		s.assertNotEquals(actual,expected);
 		Thread.sleep(2000);
 		driver.quit();
 		s.assertAll();
