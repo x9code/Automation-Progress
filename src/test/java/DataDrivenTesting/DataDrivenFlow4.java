@@ -24,6 +24,5 @@ public class DataDrivenFlow4 {
 		int lastRow = sh.getLastRowNum();
 		String name = sh.getRow(lastRow).getCell(0).toString();
 		System.out.println(name);
-		System.out.println("deepak");
 	}
 }
