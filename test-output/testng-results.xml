@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-13T12:02:11 IST" name="Default suite" finished-at="2025-12-13T12:02:21 IST" duration-ms="9338">
+  <suite started-at="2025-12-15T13:02:12 IST" name="Default suite" finished-at="2025-12-15T13:02:13 IST" duration-ms="1085">
     <groups>
     </groups>
-    <test started-at="2025-12-13T12:02:11 IST" name="Default test" finished-at="2025-12-13T12:02:21 IST" duration-ms="9338">
-      <class name="POM.StaleElementTest">
-        <test-method signature="facebook()[pri:0, instance:POM.StaleElementTest@4b2bac3f]" started-at="2025-12-13T12:02:11 IST" name="facebook" finished-at="2025-12-13T12:02:21 IST" duration-ms="9225" status="PASS">
+    <test started-at="2025-12-15T13:02:12 IST" name="Default test" finished-at="2025-12-15T13:02:13 IST" duration-ms="1085">
+      <class name="Practice.ExcelUtil">
+        <test-method signature="readExcelFile()[pri:0, instance:Practice.ExcelUtil@79079097]" started-at="2025-12-15T13:02:12 IST" name="readExcelFile" finished-at="2025-12-15T13:02:13 IST" duration-ms="1029" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebook -->
-      </class> <!-- POM.StaleElementTest -->
+        </test-method> <!-- readExcelFile -->
+      </class> <!-- Practice.ExcelUtil -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
