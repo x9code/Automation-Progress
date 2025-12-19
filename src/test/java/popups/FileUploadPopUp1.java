@@ -12,13 +12,10 @@ public class FileUploadPopUp1 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://demoapps.qspiders.com/ui/fileUpload?sublist=0");
-		
 		File f=new File("./src/test/resources/testdata/Deepaknew3.pdf");
-		
-		String path = f.getAbsolutePath();
+		String path = f.getAbsolutePath();//get the absolute path of the file loacation
 		driver.findElement(By.id("resume")).sendKeys( path );
         Thread.sleep(3000);
         driver.quit();
 	}
-
 }
