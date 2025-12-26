@@ -55,7 +55,7 @@ public class WikipediaScientists {
                     Paths.get("./Scientist_Text/" + name.replace(" ", "_") + ".txt");
 
             Files.createDirectories(txtPath.getParent());
-            Files.writeString(txtPath, scientistText.toString());
+            //Files.writeString(txtPath, scientistText.toString());
             driver.quit();
         }
 	}

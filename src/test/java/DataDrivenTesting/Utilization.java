@@ -2,7 +2,6 @@ package DataDrivenTesting;
 
 import java.io.IOException;
 
-import all_methods.Methods1;
 import all_methods.ReadPropertyFiles;
 
 public class Utilization {

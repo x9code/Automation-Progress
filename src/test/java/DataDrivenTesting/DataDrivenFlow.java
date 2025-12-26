@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.ActiTime.GenericLibrary.FileUtility;
 
-import all_methods.Methods1;
+//import all_methods.Methods1;
 import all_methods.ReadPropertyFiles;
 
 public class DataDrivenFlow {

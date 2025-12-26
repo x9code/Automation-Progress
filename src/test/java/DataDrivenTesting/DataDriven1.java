@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import all_methods.Methods1;
+//import all_methods.Methods1;
 import all_methods.ReadPropertyFiles;
 
 public class DataDriven1 {

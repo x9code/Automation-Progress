@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POM.StaleElement">
+      <class name="testng_scripts.VerifyTitle">
         <methods>
-          <include name="facebook"/>
+          <include name="verifyTitle"/>
         </methods>
-      </class> <!-- POM.StaleElement -->
+      </class> <!-- testng_scripts.VerifyTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
