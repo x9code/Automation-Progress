@@ -32,21 +32,24 @@ public class FileUpload {
         r.keyPress(KeyEvent.VK_V);
         r.keyRelease(KeyEvent.VK_V);
         r.keyRelease(KeyEvent.VK_CONTROL);
-        r.delay(500);
+        r.delay(1500);
         r.keyPress(KeyEvent.VK_ENTER);
         r.keyRelease(KeyEvent.VK_ENTER);
         r.delay(500);
-        for (int i = 1 ; i <= 5; i++) {
+        for (int i = 1 ; i <= 10; i++) {
             r.keyPress(KeyEvent.VK_TAB);
         }
-        r.delay(500);
+        r.delay(1500);
         r.keyRelease(KeyEvent.VK_TAB);
-        r.delay(500);
+        r.delay(1500);
         for (int i = 1; i <= 5; i++) {
             r.keyPress(KeyEvent.VK_DOWN);
+            r.delay(200);
         }
-        r.delay(500);
+        r.keyRelease(KeyEvent.VK_DOWN);
+        r.delay(1500);
         r.keyPress(KeyEvent.VK_ENTER);
+        r.keyRelease(KeyEvent.VK_ENTER);
         Thread.sleep(3000);
         System.out.println("file uploaded");
         driver.quit();
